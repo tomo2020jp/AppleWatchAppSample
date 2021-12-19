@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8518FC7A276F102F00DEC13C /* SensorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8518FC79276F102F00DEC13C /* SensorLogger.swift */; };
 		856DD1A1276F0A7900DD8E03 /* AppleWatchAppSample WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 856DD1A0276F0A7900DD8E03 /* AppleWatchAppSample WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		856DD1A6276F0A7C00DD8E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856DD1A5276F0A7C00DD8E03 /* Assets.xcassets */; };
 		856DD1AC276F0A7C00DD8E03 /* AppleWatchAppSample WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 856DD1AB276F0A7C00DD8E03 /* AppleWatchAppSample WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -79,6 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8518FC79276F102F00DEC13C /* SensorLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorLogger.swift; sourceTree = "<group>"; };
 		856DD19C276F0A7800DD8E03 /* AppleWatchAppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleWatchAppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856DD1A0276F0A7900DD8E03 /* AppleWatchAppSample WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppleWatchAppSample WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		856DD1A5276F0A7C00DD8E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		856DD1AF276F0A7C00DD8E03 /* AppleWatchAppSample WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8518FC79276F102F00DEC13C /* SensorLogger.swift */,
 				856DD1B0276F0A7C00DD8E03 /* AppleWatchAppSampleApp.swift */,
 				856DD1B2276F0A7C00DD8E03 /* ContentView.swift */,
 				856DD1B4276F0A7C00DD8E03 /* NotificationController.swift */,
@@ -386,6 +389,7 @@
 				856DD1B5276F0A7C00DD8E03 /* NotificationController.swift in Sources */,
 				856DD1B3276F0A7C00DD8E03 /* ContentView.swift in Sources */,
 				856DD1B9276F0A7C00DD8E03 /* ComplicationController.swift in Sources */,
+				8518FC7A276F102F00DEC13C /* SensorLogger.swift in Sources */,
 				856DD1B1276F0A7C00DD8E03 /* AppleWatchAppSampleApp.swift in Sources */,
 				856DD1B7276F0A7C00DD8E03 /* NotificationView.swift in Sources */,
 			);
@@ -575,7 +579,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -606,7 +610,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -630,7 +634,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -654,7 +658,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
