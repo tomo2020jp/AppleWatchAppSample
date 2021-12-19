@@ -21,6 +21,8 @@
 		856DD1CA276F0A7E00DD8E03 /* AppleWatchAppSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856DD1C9276F0A7E00DD8E03 /* AppleWatchAppSampleTests.swift */; };
 		856DD1D4276F0A7E00DD8E03 /* AppleWatchAppSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856DD1D3276F0A7E00DD8E03 /* AppleWatchAppSampleUITests.swift */; };
 		856DD1D6276F0A7E00DD8E03 /* AppleWatchAppSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856DD1D5276F0A7E00DD8E03 /* AppleWatchAppSampleUITestsLaunchTests.swift */; };
+		85B012E0276F19EC00FFAE6B /* nc154033.wav in Resources */ = {isa = PBXBuildFile; fileRef = 85B012DF276F19EC00FFAE6B /* nc154033.wav */; };
+		85B012E2276F1A8900FFAE6B /* nc154034.wav in Resources */ = {isa = PBXBuildFile; fileRef = 85B012E1276F1A8900FFAE6B /* nc154034.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		856DD1CF276F0A7E00DD8E03 /* AppleWatchAppSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleWatchAppSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		856DD1D3276F0A7E00DD8E03 /* AppleWatchAppSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchAppSampleUITests.swift; sourceTree = "<group>"; };
 		856DD1D5276F0A7E00DD8E03 /* AppleWatchAppSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchAppSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		85B012DF276F19EC00FFAE6B /* nc154033.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nc154033.wav; sourceTree = "<group>"; };
+		85B012E1276F1A8900FFAE6B /* nc154034.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nc154034.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,7 @@
 		856DD1AF276F0A7C00DD8E03 /* AppleWatchAppSample WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				85B012DE276F19C400FFAE6B /* Audio */,
 				8518FC79276F102F00DEC13C /* SensorLogger.swift */,
 				856DD1B0276F0A7C00DD8E03 /* AppleWatchAppSampleApp.swift */,
 				856DD1B2276F0A7C00DD8E03 /* ContentView.swift */,
@@ -197,6 +202,15 @@
 				856DD1D5276F0A7E00DD8E03 /* AppleWatchAppSampleUITestsLaunchTests.swift */,
 			);
 			path = AppleWatchAppSampleUITests;
+			sourceTree = "<group>";
+		};
+		85B012DE276F19C400FFAE6B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				85B012E1276F1A8900FFAE6B /* nc154034.wav */,
+				85B012DF276F19EC00FFAE6B /* nc154033.wav */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +376,8 @@
 			files = (
 				856DD1BE276F0A7E00DD8E03 /* Preview Assets.xcassets in Resources */,
 				856DD1BB276F0A7E00DD8E03 /* Assets.xcassets in Resources */,
+				85B012E2276F1A8900FFAE6B /* nc154034.wav in Resources */,
+				85B012E0276F19EC00FFAE6B /* nc154033.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +683,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 673GF35R6Z;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -679,6 +696,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 673GF35R6Z;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

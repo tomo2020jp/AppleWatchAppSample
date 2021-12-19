@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
     @State private var logStarting = false
     
     @ObservedObject var sensorLogger = SensorLogManager()
+    
+    private let beginSound = try!  AVAudioPlayer(data: NSDataAsset(name: "nc154033")!.data)
+    private let endSound = try!  AVAudioPlayer(data: NSDataAsset(name: "nc154034")!.data)
     
     var body: some View {
         VStack{
@@ -19,9 +23,11 @@ struct ContentView: View {
                 
                 if self.logStarting{
                     self.sensorLogger.startUpdate(50.0)
+                    beginSound.play()
                 }
                 else{
                     self.sensorLogger.stopUpdate()
+                    endSound.play()
                 }
             }){
                 if self.logStarting{
