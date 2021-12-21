@@ -54,6 +54,13 @@
 			remoteGlobalIDString = 856DD19F276F0A7900DD8E03;
 			remoteInfo = "AppleWatchAppSample WatchKit App";
 		};
+		85DC58712771F04100E3D249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 856DD196276F0A7800DD8E03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 856DD1AA276F0A7C00DD8E03;
+			remoteInfo = "AppleWatchAppSample WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -138,6 +145,7 @@
 				856DD1C8276F0A7E00DD8E03 /* AppleWatchAppSampleTests */,
 				856DD1D2276F0A7E00DD8E03 /* AppleWatchAppSampleUITests */,
 				856DD19D276F0A7800DD8E03 /* Products */,
+				85DC58702771F04100E3D249 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +221,13 @@
 			path = Audio;
 			sourceTree = "<group>";
 		};
+		85DC58702771F04100E3D249 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +259,7 @@
 			);
 			dependencies = (
 				856DD1AE276F0A7C00DD8E03 /* PBXTargetDependency */,
+				85DC58722771F04100E3D249 /* PBXTargetDependency */,
 			);
 			name = "AppleWatchAppSample WatchKit App";
 			productName = "AppleWatchAppSample WatchKit App";
@@ -451,6 +467,11 @@
 			target = 856DD19F276F0A7900DD8E03 /* AppleWatchAppSample WatchKit App */;
 			targetProxy = 856DD1D0276F0A7E00DD8E03 /* PBXContainerItemProxy */;
 		};
+		85DC58722771F04100E3D249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 856DD1AA276F0A7C00DD8E03 /* AppleWatchAppSample WatchKit Extension */;
+			targetProxy = 85DC58712771F04100E3D249 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -575,11 +596,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppleWatchAppSample WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8KP8HNZ2FQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AppleWatchAppSample WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "AppleWatchAppSample WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = AppleWatchAppSample_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -588,7 +610,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample2021.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -606,11 +628,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppleWatchAppSample WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8KP8HNZ2FQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AppleWatchAppSample WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "AppleWatchAppSample WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = AppleWatchAppSample_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -619,7 +642,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample2021.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -638,12 +661,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8KP8HNZ2FQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = AppleWatchAppSample_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "AppleWatchAppSample WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample2021.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -662,12 +686,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8KP8HNZ2FQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = AppleWatchAppSample_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "AppleWatchAppSample WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample2021.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -683,9 +708,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 673GF35R6Z;
+				DEVELOPMENT_TEAM = 8KP8HNZ2FQ;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample2021;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -696,9 +721,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 673GF35R6Z;
+				DEVELOPMENT_TEAM = 8KP8HNZ2FQ;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSample2021;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -711,6 +736,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8KP8HNZ2FQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSampleTests;
@@ -731,6 +757,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8KP8HNZ2FQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSampleTests;
@@ -749,6 +776,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8KP8HNZ2FQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tomo.AppleWatchAppSampleUITests;

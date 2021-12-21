@@ -5,9 +5,11 @@
 //  Created by Tomohiko Aono on 2021/12/10.
 //
 
+import SwiftUI
 import Foundation
 import CoreMotion
 import Combine
+import AVFoundation
 
 class SensorLogManager: NSObject, ObservableObject{
     var motionManager: CMMotionManager?
@@ -22,6 +24,10 @@ class SensorLogManager: NSObject, ObservableObject{
     private var samplingFrequency = 50.0
     
     var timer = Timer()
+    
+    var bkParam = 0.0
+    
+    private let sound = try!  AVAudioPlayer(data: NSDataAsset(name: "nc154037")!.data)
     
     override init(){
         super.init()
@@ -61,6 +67,12 @@ class SensorLogManager: NSObject, ObservableObject{
         }
         
         print("Watch: acc (\(self.accX), \(self.accY), \(self.accZ)), gyr (\(self.gyrX), \(self.gyrY), \(self.gyrZ)) ")
+        
+        if (abs(bkParam - self.gyrY)) >= 1.0
+        {
+            sound.play()
+        }
+        bkParam = self.gyrY
     }
     
     func startUpdate(_ freq: Double){
