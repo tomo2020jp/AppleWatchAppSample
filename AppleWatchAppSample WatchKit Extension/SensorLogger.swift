@@ -25,9 +25,20 @@ class SensorLogManager: NSObject, ObservableObject{
     
     var timer = Timer()
     
-    var bkParam = 0.0
+    var buckupAccX = 0.0
+    var buckupAccY = 0.0
+    var buckupAccZ = 0.0
+    var buckupGyrX = 0.0
+    var buckupGyrY = 0.0
+    var buckupGyrZ = 0.0
     
-    private let sound = try!  AVAudioPlayer(data: NSDataAsset(name: "nc154037")!.data)
+    var isSound = false
+    
+    private let sound1 = try! AVAudioPlayer(data: NSDataAsset(name: "nc154037")!.data)
+    private let sound2 = try! AVAudioPlayer(data: NSDataAsset(name: "nc154038")!.data)
+    private let sound3 = try! AVAudioPlayer(data: NSDataAsset(name: "nc154039")!.data)
+    private let sound4 = try! AVAudioPlayer(data: NSDataAsset(name: "nc154040")!.data)
+    private let sound5 = try! AVAudioPlayer(data: NSDataAsset(name: "nc166939")!.data)
     
     override init(){
         super.init()
@@ -66,13 +77,74 @@ class SensorLogManager: NSObject, ObservableObject{
             self.gyrZ = Double.nan
         }
         
-        print("Watch: acc (\(self.accX), \(self.accY), \(self.accZ)), gyr (\(self.gyrX), \(self.gyrY), \(self.gyrZ)) ")
         
-        if (abs(bkParam - self.gyrY)) >= 1.0
+        
+        if (abs(buckupGyrX - self.gyrX)) >= 1.0
         {
-            sound.play()
+            isSound = true
+            print("GyrX: AAAAAAA")
+            print("Watch: acc (\(self.accX), \(self.accY), \(self.accZ)), gyr (\(self.gyrX), \(self.gyrY), \(self.gyrZ)) ")
+//            sound1.play()
         }
-        bkParam = self.gyrY
+        buckupGyrX = self.gyrX
+        if (abs(buckupGyrY - self.gyrY)) >= 1.0
+        {
+            isSound = true
+            print("GyrY: BBBBBBB")
+            print("Watch: acc (\(self.accX), \(self.accY), \(self.accZ)), gyr (\(self.gyrX), \(self.gyrY), \(self.gyrZ)) ")
+//            sound2.play()
+        }
+        buckupGyrY = self.gyrY
+        if (abs(buckupGyrZ - self.gyrZ)) >= 1.0
+        {
+            isSound = true
+            print("GyrZ: CCCCCCC")
+            print("Watch: acc (\(self.accX), \(self.accY), \(self.accZ)), gyr (\(self.gyrX), \(self.gyrY), \(self.gyrZ)) ")
+//            sound3.play()
+        }
+        buckupGyrZ = self.gyrZ
+        if (abs(buckupAccX - self.accX)) >= 0.5
+        {
+            isSound = true
+            print("AccX: DDDDDDD")
+            print("Watch: acc (\(self.accX), \(self.accY), \(self.accZ)), gyr (\(self.gyrX), \(self.gyrY), \(self.gyrZ)) ")
+//            sound4.play()
+        }
+        buckupAccX = self.accX
+        if (abs(buckupAccY - self.accY)) >= 0.5
+        {
+            isSound = true
+            print("AccY: EEEEEE")
+            print("Watch: acc (\(self.accX), \(self.accY), \(self.accZ)), gyr (\(self.gyrX), \(self.gyrY), \(self.gyrZ)) ")
+//            sound5.play()
+        }
+        buckupAccY = self.accY
+        if (abs(buckupAccZ - self.accZ)) >= 0.5
+        {
+            isSound = true
+            print("AccZ: FFFFFFFF")
+            print("Watch: acc (\(self.accX), \(self.accY), \(self.accZ)), gyr (\(self.gyrX), \(self.gyrY), \(self.gyrZ)) ")
+//            sound1.play()
+        }
+        buckupAccZ = self.accZ
+        if(isSound){
+            let randomInt = Int.random(in: 1..<5)
+            switch randomInt {
+            case 1:
+                sound1.play()
+            case 2:
+                sound2.play()
+            case 3:
+                sound3.play()
+            case 4:
+                sound4.play()
+            case 5:
+                sound5.play()
+            default:
+                sound1.play()
+            }
+            isSound = false
+        }
     }
     
     func startUpdate(_ freq: Double){
