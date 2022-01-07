@@ -18,6 +18,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
+            Color.green.ignoresSafeArea()
             Button(action: {
                 self.logStarting.toggle()
                 
